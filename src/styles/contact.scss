@@ -1,0 +1,30 @@
+.contact{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+
+    span{
+        font-size: 12px;
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+
+        &__contact{
+            padding-right: 10px;
+            border-right: 2px solid $yellow;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        span{
+            padding-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.about{
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    &__img{
+        width: 250px;
+        height: auto;
+    }
+
+    &__text-wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    h2{
+        font-size: 24px;
+        border-left: 4px solid $yellow;
+        padding-left: 10px;
+        margin: 40px 0 25px 0;
+    }
+    p{
+        margin: 0;
+    }
+}

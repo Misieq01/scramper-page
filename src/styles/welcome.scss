@@ -1,0 +1,34 @@
+.welcome{
+    &__wrapper{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15px;
+        h3{
+            font-weight: normal;
+        };
+        h2:first-child {
+            color: $yellow;
+        }
+        h2,h3{
+            margin: 5px 0;
+        };
+    }
+    &__buttonsWrapper{
+        margin-top: 15px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__button{
+        @extend .button;
+        margin: 0 5px
+    }
+    &__img{
+        margin-top: 30px ;
+        width: 100%;
+        height: auto;
+    }
+}

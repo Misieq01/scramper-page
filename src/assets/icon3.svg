@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Group_64" data-name="Group 64" transform="translate(-0.255 0.333)">
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(0.255 -0.333)" fill="none" stroke="#f1d26d" stroke-width="2">
+      <circle cx="22.5" cy="22.5" r="22.5" stroke="none"/>
+      <circle cx="22.5" cy="22.5" r="21.5" fill="none"/>
+    </g>
+    <g id="Search" transform="translate(14.275 14.092)">
+      <path id="Search-2" data-name="Search" d="M15.84,16.714l-.07-.059-2.632-2.567a8.165,8.165,0,0,1-5.049,1.734A8.011,8.011,0,0,1,0,7.911,8.011,8.011,0,0,1,8.089,0a8.011,8.011,0,0,1,8.09,7.911,7.786,7.786,0,0,1-2.13,5.344l2.6,2.537a.6.6,0,0,1,0,.862.634.634,0,0,1-.811.06ZM1.246,7.911A6.777,6.777,0,0,0,8.089,14.6a6.777,6.777,0,0,0,6.844-6.693A6.777,6.777,0,0,0,8.089,1.219,6.777,6.777,0,0,0,1.246,7.911Z" fill="#f1d26d"/>
+    </g>
+  </g>
+</svg>

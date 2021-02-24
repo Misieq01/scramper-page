@@ -1,0 +1,36 @@
+@import "./colors.scss";
+@import './components.scss';
+@import "./header.scss";
+@import "./welcome.scss";
+@import "./content.scss";
+@import "./about.scss";
+@import "./upload.scss";
+@import "./contact.scss";
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+  background: $dark;
+  padding: 15px 25px;
+  // background-image: url('../assets/background.svg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+button{
+  outline: none;
+  border:none;
+  background:none;
+  color: $white;
+}
