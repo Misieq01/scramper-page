@@ -1,4 +1,9 @@
 @import "./colors.scss";
+
+$shadowBox: 0 3px 8px rgba(0,0,0,0.5);
+$shadowBoxLight: 0 3px 6px rgba(0,0,0,0.2);
+$shadowText: 0 3px 6px rgba(0,0,0,0.6);
+
 @import './components.scss';
 @import "./header.scss";
 @import "./welcome.scss";
@@ -6,12 +11,13 @@
 @import "./about.scss";
 @import "./upload.scss";
 @import "./contact.scss";
+@import "./components/button.scss";
 
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: "Roboto";
   background: $dark;
-  padding: 15px 25px;
   // background-image: url('../assets/background.svg');
   // background-size: cover;
   // background-repeat: no-repeat;
@@ -33,4 +39,16 @@ button{
   border:none;
   background:none;
   color: $white;
+  font-family: Roboto;
+}
+
+.app-wrapper{
+  width: 90%;
+  height: 95%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  margin: auto;
 }

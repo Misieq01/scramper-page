@@ -1,0 +1,30 @@
+.button-filled{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: $yellow;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    color: $dark;
+    box-shadow: $shadowBox;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.button-border{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 1px solid $yellow;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    color: $yellow;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}

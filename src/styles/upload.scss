@@ -1,29 +1,44 @@
-.upload{
+.upload {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  button{
+      @extend .button-filled;
+      margin-top: 20px;
+  }
+
+  &__text-wrapper {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-
-    h2{
-        font-size: 16px;
-        padding-bottom: 5px;
-        border-bottom: 2px solid $yellow;
+    margin: 30px 0;
+    h2 {
+      font-size: 16px;
+      padding-bottom: 5px;
+      margin-bottom: 0;
     }
 
-    div{
-        padding: 10px 0px;
-        border: 1px solid $yellow;
-        border-radius: 10px;
-        font-size: 12px;
-        margin: 10px 0;
-        width: 260px;
-        text-align: center;
+    div {
+      border-top: 2px solid $yellow;
+      width: 40%;
     }
+  }
 
-    button{
-        margin-top: 10px;
-        border: 1px solid $yellow;
-        border-radius: 20px;
-        padding: 5px 35px;
+  &__element {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+    width: 260px;
+    text-align: center;
+
+    span {
+      font-size: 12px;
+      padding-left: 20px;
     }
+  }
 }

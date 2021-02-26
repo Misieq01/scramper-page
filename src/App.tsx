@@ -7,7 +7,7 @@ import Upload from './Sections/Upload'
 import Welcome from './Sections/Welcome'
 
 const App = () => {
-    return <div>
+    return <div className='app-wrapper'>
         <Header/>
         <Welcome/>
         <Content/>
