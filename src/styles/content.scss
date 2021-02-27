@@ -33,24 +33,24 @@
     justify-content: space-around;
     align-items: center;
     width: 260px;
-    box-shadow: $shadowBoxLight;
+    border: 1px solid $yellow;
     padding: 5px 0 20px 0;
     margin-top: 25px;
     border-radius: 10px;
 
     &__icon {
-      margin: 10px 0;
+      margin: 5px 0;
       width: 45px;
       height: 45px;
     }
     h3 {
       font-weight: bold;
-      margin: 10px 0;
+      margin: 5px 0;
       font-size: 16px;
     }
     p {
       text-align: center;
-      margin: 10px 0;
+      margin: 5px 0;
       font-size: 16px;
     }
   }

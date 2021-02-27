@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="about">
-      <h2>Backbone of your database</h2>
+      <h3>Backbone of your database</h3>
       <div className="about__text-wrapper">
         <p>
           Scramper is powerfull tool for scrapping data for your projects. It focus on movies and series which gets from operating on sites like imdb and

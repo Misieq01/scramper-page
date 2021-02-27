@@ -4,9 +4,11 @@
   justify-content: space-around;
   align-items: center;
 
-  h2 {
-    color: $yellow;
+  h3 {
+    color: $white;
+    text-shadow: $shadowText;
     margin: 40px 0 10px 0;
+    text-transform: uppercase;
   }
 
   &__text-wrapper {
@@ -14,15 +16,16 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 90vw;
     padding: 20px 0;
-    background: $yellow;
+    box-shadow: $shadowBox;
+    border-radius: 8px;
   }
 
   p {
-    margin: 0;
+    margin: 0 25px;
     text-align: center;
-    color: $dark;
+    color: $white;
     font-size: 12px;
   }
 }

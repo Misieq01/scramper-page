@@ -1,5 +1,5 @@
 import React from 'react'
-import {ReactComponent as MenuIcon} from './assets/menu.svg'
+import {ReactComponent as MenuIcon} from '../assets/menu.svg'
 
 const Header = () => {
     return (

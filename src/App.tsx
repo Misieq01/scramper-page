@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import Header from './Sections/Header'
 import About from './Sections/About'
 import Contact from './Sections/Contact'
 import Content from './Sections/Content'
