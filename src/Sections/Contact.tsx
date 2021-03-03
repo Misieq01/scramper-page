@@ -1,10 +1,12 @@
 import React from "react";
 import {ReactComponent as UnDraw} from '../assets/unDraw2.svg'
+import Button from '../components/Button'
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <UnDraw className='contact__img'/>
+    <div className="contact" id='contact'>
+      <Button text="Download" type="filled" style={{ margin: "20px" }} />
+      <UnDraw className="contact__img" />
       <span>I'll be happy to put your ideas in action</span>
       <div className="contact__wrapper">
         <span className="contact__wrapper__contact">Contact</span>

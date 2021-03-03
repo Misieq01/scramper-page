@@ -3,12 +3,35 @@
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
+  background: $yellow;
+  width: calc(100vw - 40px);
+  margin-top: 40px;
+  padding: 20px;
+
+  @include md{
+padding: 30px;
+margin-top: 60px;
+  }
+
+  @include lg{
+    width: 80vw;
+    margin: 80px 0;
+    background: none;
+    border-top: 1px solid $yellow;
+    box-shadow: $shadowBoxLight;
+    border-radius: 6px;
+    margin: 80px 0 40px 0;
+  }
 
   h3 {
-    color: $white;
-    text-shadow: $shadowText;
-    margin: 40px 0 10px 0;
-    text-transform: uppercase;
+    margin: 0;
+    margin-top: 14px;
+    color: $dark;
+
+    @include lg{
+      color: $yellow
+    }
+
   }
 
   &__text-wrapper {
@@ -16,16 +39,18 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
-    padding: 20px 0;
-    box-shadow: $shadowBox;
-    border-radius: 8px;
+    border: 1px solid $dark;
+      @include lg{
+    border-radius: 10px;
+  }
   }
 
   p {
-    margin: 0 25px;
     text-align: center;
-    color: $white;
-    font-size: 12px;
+    color: $dark;
+    width: 90%;
+    @include lg {
+      color:  $white;
+    }
   }
 }

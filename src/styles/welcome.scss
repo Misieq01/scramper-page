@@ -1,4 +1,12 @@
 .welcome{
+    @include lg{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 60vh;
+    }
     &__wrapper{
         display: flex;
         flex-flow: column;
@@ -12,23 +20,44 @@
             color: $yellow;
         }
         h2,h3{
-            margin: 5px 0;
+            margin: 10px 0;
         };
         h2{
             text-shadow: $shadowText;
         }
+
+        @include lg{
+            flex-flow: row nowrap;
+            align-self: flex-start;
+            justify-content: flex-start;
+        }
+
+
     }
     &__buttonsWrapper{
         width: 65%;
         margin-top: 15px;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+
+        @include lg{
+            width: auto;
+            justify-content: flex-start;
+            :first-child{
+                margin-left: 0;
+            }
+        }
     }
     &__img{
         margin-top: 30px ;
-        width: 100%;
+        width: 90vw;
         height: auto;
+
+        @include lg{
+            width: 40vw;
+            align-self: flex-end;
+        }
     }
 }

@@ -1,10 +1,38 @@
-.header{
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  @include lg{
+    margin-bottom: 100px;
+  }
+
+  h1 {
+    font-weight: normal;
+    @include lg{
+      font-size: 32px;
+    }
+  }
+
+  &__img{
+      width: 16px;
+      height: auto;
+      @include md{
+          width: 32px;
+      }
+  }
+
+
+  &__navbar{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    h1{
-        font-weight: normal;
-        font-size: 32px;
-    }
+    width: 25%;
+  
+
+  }
+
+
 }

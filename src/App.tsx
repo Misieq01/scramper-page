@@ -7,13 +7,15 @@ import Upload from './Sections/Upload'
 import Welcome from './Sections/Welcome'
 
 const App = () => {
-    return <div className='app-wrapper'>
-        <Header/>
-        <Welcome/>
-        <Content/>
-        <About/>
-        <Upload/>
-        <Contact/>
+    return <div className='app-wrapper-flex'>
+        <div className='app-wrapper-size'>
+            <Header/>
+            <Welcome/>
+            <Content/>
+            <About/>
+            <Upload/>
+            <Contact/>
+        </div>
     </div>
 }
 

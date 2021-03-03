@@ -1,10 +1,11 @@
 @import "./colors.scss";
+@import './breakpoints.scss';
+@import './mixins.scss';
 
 $shadowBox: 0 3px 8px rgba(0,0,0,0.5);
 $shadowBoxLight: 0 3px 6px rgba(0,0,0,0.2);
 $shadowText: 0 3px 6px rgba(0,0,0,0.6);
 
-@import './components.scss';
 @import "./header.scss";
 @import "./welcome.scss";
 @import "./content.scss";
@@ -18,37 +19,73 @@ body {
   margin: 0;
   font-family: "Roboto";
   background: $dark;
-  // background-image: url('../assets/background.svg');
-  // background-size: cover;
-  // background-repeat: no-repeat;
   color: $white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  @include lg{
+    // background-image: url('../assets/background.svg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    
+  }
+}
+
+h1 {
+  font-size: 32px;
+  @include md{
+    font-size: 48px;
+  }
 }
 
 h2 {
   font-size: 24px;
+  @include md{
+    font-size: 32px;
+  }
 }
 
 h3 {
   font-size: 16px;
+  @include md{
+    font-size: 24px;
+  }
 }
 
-button{
-  outline: none;
-  border:none;
-  background:none;
-  color: $white;
-  font-family: Roboto;
+p{
+  font-size: 12px;
+  @include md{
+    font-size: 18px;
+  }
 }
 
-.app-wrapper{
+.app-wrapper-flex{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height:auto;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom:0;
+  // margin: auto;
+}.app-wrapper-size{
+    display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
   width: 90%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom:0;
-  margin: auto;
+  height:auto;
+}
+
+a{
+  text-decoration: none;
+  color: $white;
+
+  &:hover{
+    opacity: 0.75;
+  }
 }

@@ -1,30 +1,41 @@
-.button-filled{
+.button{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background: $yellow;
     width: 100px;
     height: 30px;
     border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    margin: 0 10px;
+
+    cursor: pointer;
+
+    @include md{
+        width: 180px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    @include lg{
+        width: 150px;
+        font-size: 16px;
+    }
+}
+
+.button-filled{
+@extend .button;
+    background: $yellow;
     color: $dark;
     box-shadow: $shadowBox;
     font-weight: 900;
-    font-size: 12px;
-    text-transform: uppercase;
 }
 .button-border{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+@extend .button;
     background: none;
     border: 1px solid $yellow;
-    width: 100px;
-    height: 30px;
-    border-radius: 4px;
     color: $yellow;
     font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
 }

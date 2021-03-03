@@ -27,7 +27,7 @@ const Box = ({Icon,title,text}:TBox) => {
 
 const Content = () => {
     return (
-      <div className="content">
+      <div className="content" id='content'>
         <div className="content__text-wrapper">
           <h2>Everything in one tool</h2>
         </div>

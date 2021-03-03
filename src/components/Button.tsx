@@ -1,11 +1,12 @@
 import React from 'react'
 
 type TButton = {
-    text:string
-    type: 'filled' | 'border'
-}
+  text: string;
+  type: "filled" | "border";
+  style?: React.CSSProperties;
+};
 
-const Button = ({ text, type }: TButton) => {
-  return <div className={`button-${type}`}>{text}</div>;
+const Button = ({ text, type,style }: TButton) => {
+  return <div className={`button-${type}`} style={style}>{text}</div>;
 };
 export default Button

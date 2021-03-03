@@ -4,19 +4,13 @@
   justify-content: space-around;
   align-items: center;
 
-  button{
-      @extend .button-filled;
-      margin-top: 20px;
-  }
-
   &__text-wrapper {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    margin: 30px 0;
-    h2 {
-      font-size: 16px;
+    margin: 30px 0 15px 0;
+    h3 {
       padding-bottom: 5px;
       margin-bottom: 0;
     }
@@ -24,6 +18,16 @@
     div {
       border-top: 2px solid $yellow;
       width: 40%;
+
+      @include md {
+        border-top: 3px solid $yellow;
+        width: 60%;
+      }
+
+    }
+
+    @include lg{
+      margin: 0 0 15px 0;
     }
   }
 
@@ -33,12 +37,19 @@
     justify-content: flex-start;
     align-items: center;
     margin: 10px 0;
-    width: 260px;
+    width: 100%;
     text-align: center;
+
+    @include md {
+      margin: 20px 0;
+    }
 
     span {
       font-size: 12px;
       padding-left: 20px;
+      @include md {
+        font-size: 20px;
+      }
     }
   }
 }
