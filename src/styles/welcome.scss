@@ -6,6 +6,11 @@
         align-items: center;
         width: 80%;
         height: 60vh;
+
+
+    @include xl{
+        width: 70%;
+    }
     }
     &__wrapper{
         display: flex;
@@ -58,6 +63,10 @@
         @include lg{
             width: 40vw;
             align-self: flex-end;
+        }
+
+        @include xl{
+            width: 35vw;
         }
     }
 }

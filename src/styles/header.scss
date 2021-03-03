@@ -1,38 +1,52 @@
 .header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 90%;
-  @include lg{
-    margin-bottom: 100px;
+  width: 100%;
+  @include lg {
+    position: fixed;
+    background: $dark;
+    opacity: 0.85;
+    box-shadow: $shadowBoxLight;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  &__placeholder {
+    width: 100vw !important;
+    height: auto;
+    position: static;
+    height: 200px;
   }
 
   h1 {
     font-weight: normal;
-    @include lg{
+    @include lg {
       font-size: 32px;
+      margin: 15px 0;
     }
   }
 
-  &__img{
-      width: 16px;
-      height: auto;
-      @include md{
-          width: 32px;
-      }
+  &__img {
+    width: 16px;
+    height: auto;
+    @include md {
+      width: 32px;
+    }
   }
 
-
-  &__navbar{
+  &__navbar {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
     width: 25%;
-  
-
   }
-
-
 }

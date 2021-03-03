@@ -5,7 +5,7 @@ import Button from '../components/Button'
 const Contact = () => {
   return (
     <div className="contact" id='contact'>
-      <Button text="Download" type="filled" style={{ margin: "20px" }} />
+      <Button type="download" style={{ margin: "20px" }} />
       <UnDraw className="contact__img" />
       <span>I'll be happy to put your ideas in action</span>
       <div className="contact__wrapper">

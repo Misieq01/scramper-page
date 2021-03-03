@@ -1,12 +1,19 @@
 import React from 'react'
 
 type TButton = {
-  text: string;
-  type: "filled" | "border";
+  type: "github" | "download";
   style?: React.CSSProperties;
 };
 
-const Button = ({ text, type,style }: TButton) => {
-  return <div className={`button-${type}`} style={style}>{text}</div>;
+const Button = ({ type,style }: TButton) => {
+  return type === "download" ? (
+    <div className={`button-filled`} style={style}>
+      <a href="https://github.com/Misieq01/Scrapper">Download</a>
+    </div>
+  ) : (
+    <div className={`button-border`} style={style}>
+      <a href="https://github.com/Misieq01/Scrapper">Github</a>
+    </div>
+  );
 };
 export default Button

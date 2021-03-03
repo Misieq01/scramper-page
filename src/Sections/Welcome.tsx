@@ -10,8 +10,8 @@ const Mobile = () => {
        <h2>Ultimate solution</h2>
        <h3>Collecting data has never been easier</h3>
        <div className="welcome__buttonsWrapper">
-         <Button text="Github" type="border" />
-         <Button text="Download" type="filled" />
+         <Button  type="github" />
+         <Button  type="download" />
        </div>
        <Img className="welcome__img" />
      </div>
@@ -28,8 +28,8 @@ const PC = () => {
           <h2>Ultimate solution</h2>
           <h3>Collecting data has never been easier</h3>
           <div className="welcome__buttonsWrapper">
-            <Button text="Github" type="border" />
-            <Button text="Download" type="filled" />
+            <Button type="github" />
+            <Button type="download" />
           </div>
         </div>
       </div>
