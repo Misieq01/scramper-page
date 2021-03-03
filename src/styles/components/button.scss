@@ -34,14 +34,21 @@
 .button-filled{
 @extend .button;
     background: $yellow;
-    color: $dark;
     box-shadow: $shadowBox;
-    font-weight: 900;
+    
+    a{
+        color: $dark;
+        font-weight: 900;
+    }
 }
 .button-border{
 @extend .button;
     background: none;
     border: 1px solid $yellow;
-    color: $yellow;
-    font-weight: bold;
+    
+    a{
+        font-weight: bold;
+        color: $yellow;
+        
+    }
 }
