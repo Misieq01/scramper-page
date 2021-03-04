@@ -1,14 +1,17 @@
 .header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   @include lg {
     position: fixed;
     background: $dark;
-    opacity: 0.85;
-    box-shadow: $shadowBoxLight;
+    // opacity: 0.85;
+    border-bottom: 1px solid #f1d26d9c;
+  }
+  @include xl {
+    justify-content: center;
   }
 
   &__wrapper {
